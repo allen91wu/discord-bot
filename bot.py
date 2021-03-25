@@ -49,4 +49,10 @@ async def 走啊(ctt):
    await ctt.send('哪次不去了')
 # test chat
 
+@bot.command()
+async def 餓(ctt):
+   await ctt.send('吃飯')
+# test chat
+
+
 bot.run(jdata['TOKEN'])
