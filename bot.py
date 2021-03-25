@@ -50,3 +50,4 @@ async def 走啊(ctt):
 # test chat
 
 bot.run(jdata['TOKEN'])
+client.run(jdata['TOKEN'])
