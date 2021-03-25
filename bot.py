@@ -30,7 +30,7 @@ async def on_member_remove(member):
 
 @bot.event
 async def on_member_remove(member):
-    channel=bot.get_channel(jdata['general_channel'])
+    channel=bot.get_channel(int(jdata['general_channel']))
     await channel.send(f'{member}leave!')
 # send message notice member leave in discord
 
