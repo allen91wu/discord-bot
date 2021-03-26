@@ -19,7 +19,7 @@ async def on_member_join(member):
     print(f'{member}join!')
 # print member join in terminal
 
-bot.event
+@bot.event
 async def on_member_join(member):
     channel=bot.get_channel(int(jdata['general_channel']))
     await channel.send(f'{member}join!')
