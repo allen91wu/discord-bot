@@ -73,4 +73,16 @@ async def 早安(ctt):
    print('sned a message')
 # test chat
 
+@bot.command()
+async def 閉嘴機器人(ctt):
+   await ctt.send('你他媽才閉嘴')
+   print('sned a message')
+# test chat
+
+@bot.command()
+async def 要一起想像嗎(ctt):
+   await ctt.send('你他媽才葉宜')
+   print('sned a message')
+# test chat
+
 bot.run(jdata['TOKEN'])
