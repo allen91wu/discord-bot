@@ -85,4 +85,10 @@ async def 要一起想像嗎(ctt):
    print('sned a message')
 # test chat
 
+@bot.command()
+async def helpme(ctt):
+    await ctt.send(jdata['explain'])
+    print('sned a message')
+# explain discord bot
+
 bot.run(jdata['TOKEN'])
