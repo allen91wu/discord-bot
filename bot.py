@@ -67,5 +67,10 @@ async def 餓(ctt):
    print('sned a message')
 # test chat
 
+@bot.command()
+async def 早安(ctt):
+   await ctt.send('早安阿')
+   print('sned a message')
+# test chat
 
 bot.run(jdata['TOKEN'])
