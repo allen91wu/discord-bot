@@ -14,7 +14,6 @@ async def on_ready():
     print(">> Bot is online <<")
 # print online in terminal
 
-
 @bot.command()
 async def helpme(ctt):
     await ctt.send(jdata['explain'])
@@ -25,16 +24,19 @@ async def helpme(ctt):
 async def load(ctx,extension):
     bot.load_extension(f'cmds.{extension}')
     await ctx.send(f'loaded {extension} done.')
+    print('sned a message')
 
 @bot.command()
 async def unload(ctx,extension):
     bot.unload_extension(f'cmds.{extension}')
     await ctx.send(f'un-loaded {extension} done.')
+    print('sned a message')
 
 @bot.command()
 async def reload(ctx,extension):
     bot.reload_extension(f'cmds.{extension}')
     await ctx.send(f're-loaded {extension} done.')
+    print('sned a message')
 
 for filename in os.listdir('./cmds'):
     if filename.endswith('.py'):
