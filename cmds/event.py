@@ -7,17 +7,27 @@ with open('setting.json','r',encoding='utf8') as jfile:
     jdata=json.load(jfile)
 
 class Event(Cog_Extension):
-   
-    @commands.Cog.listener()
-    async def on_message(self,msg):
-        if msg.content == '機器人':
-            await msg.channel.send('你好吵')
 
     @commands.Cog.listener()
     async def on_message(self,msg):
         keyword=jdata['keyword']
         if msg.content in keyword and msg.author != self.bot.user:
             await msg.channel.send('爛')
+        if msg.content == '機器人':
+            await msg.channel.send('你好吵')
+        if msg.content == '要不要吃烤肉':
+            await msg.channel.send('好啊我想吃')
+        if msg.content == '走啊':
+            await msg.channel.send('哪次不去了')
+        if msg.content == '餓':
+            await msg.channel.send('吃飯')
+        if msg.content == '早安':
+            await msg.channel.send('早安阿')
+        if msg.content == '閉嘴機器人':
+            await msg.channel.send('你他媽才閉嘴')
+        if msg.content == '要一起想像嗎':
+            await msg.channel.send('你他媽才葉宜')
+
 
 
 def setup(bot):
