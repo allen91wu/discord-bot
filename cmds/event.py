@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 from core.classes import Cog_Extension
 import json
+import random
 
 with open('setting.json','r',encoding='utf8') as jfile:
     jdata=json.load(jfile)
@@ -27,6 +28,9 @@ class Event(Cog_Extension):
             await msg.channel.send('你他媽才閉嘴')
         if msg.content == '要一起想像嗎':
             await msg.channel.send('你他媽才葉宜')
+        if msg.content.endswith('郭'):
+            random_kuo=random.choice(jdata['kuoword'])
+            await msg.channel.send(random_kuo)
 
 
 
