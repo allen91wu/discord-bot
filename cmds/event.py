@@ -31,7 +31,7 @@ class Event(Cog_Extension):
         if msg.content.endswith('郭'):
             random_kuo=random.choice(jdata['kuoword'])
             await msg.channel.send(random_kuo)
-        if msg.content.endswith('.'):
+        if msg.content.endswith('.') and msg.author != self.bot.user:
             random_ting=random.choice(jdata['tingword'])
             await msg.channel.send(random_ting)
 
