@@ -1,22 +1,28 @@
 # Discord-bot
 
-## Usage
+## Usage (Windows & Linux)
 Step1. Download the repo
 ```
 $ git clone https://github.com/allen91wu/discord-bot
 $ cd discord-bot
 ```
 
-Step2. Set up your discord bot token
+Step2. Set up your virtual environment with pipenv
+
 ```
-$ pip install "python-dotenv[cli]"
-$ dotenv set BOT_TOKEN YOUR_TOKEN
+$ pip install pipenv
+$ pipenv install
 ```
 
-Step3. Implement the bot server
+Step3. Set up your discord bot token
+
 ```
-$ pip install -r requirements.txt
-$ python3 main.py
+$ pipenv run dotenv set BOT_TOKEN YOUR_TOKEN
+```
+
+Step4. Implement the bot server
+```
+$ pipenv run python main.py
 ```
 
 ## Function
