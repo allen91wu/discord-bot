@@ -32,10 +32,8 @@ class Event(Cog_Extension):
             random_kuo=random.choice(jdata['kuoword'])
             await msg.channel.send(random_kuo)
         if msg.content.endswith('.') and msg.author != self.bot.user:
-            random_ting=random.choice(jdata['tingword'])
-            await msg.channel.send(random_ting)
-
-
+            random_meme_pictures="https://allen91wu.github.io/discord-bot/meme/meme_"+str(random.randrange(146))+".jpg"
+            await msg.channel.send(random_meme_pictures)
 
 def setup(bot):
     bot.add_cog(Event(bot))
