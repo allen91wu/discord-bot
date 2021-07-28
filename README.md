@@ -33,7 +33,11 @@ Step 3. Set up your discord bot token
 $ pipenv run dotenv set BOT_TOKEN YOUR_TOKEN
 ```
 
+- [dotenv](https://github.com/theskumar/python-dotenv)
+- [Discord developer portal](https://discord.com/developers/applications)
+
 Step 4. Implement the bot server
+
 ```
 $ pipenv run python main.py
 ```
@@ -55,6 +59,9 @@ Step 3. Set up your discord bot token
 ```
 $ pipenv run dotenv set BOT_TOKEN YOUR_TOKEN
 ```
+
+- [dotenv](https://github.com/theskumar/python-dotenv)
+- [Discord developer portal](https://discord.com/developers/applications)
 
 Step 4. Work on your new feature and make sure it can work
 

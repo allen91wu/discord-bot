@@ -5,7 +5,6 @@ name = "pypi"
 
 [packages]
 "discord.py" = "*"
-python-dotenv = "*"
 
 [dev-packages]
 flake8 = "*"
@@ -13,3 +12,6 @@ black = "*"
 
 [requires]
 python_version = "3.8"
+
+[packages.python-dotenv]
+extras = [ "cli",]
