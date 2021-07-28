@@ -26,5 +26,8 @@ $ pipenv run python main.py
 ```
 
 ## Function
-- Meme_pictures_sender
-- Chat_bot
+- Meme pictures sender
+- Chat bot
+- Ping
+- Remove messages
+- Echo messages
