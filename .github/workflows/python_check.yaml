@@ -1,6 +1,10 @@
 name: python check
 
-on: [pull_request, push]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   check:
@@ -14,11 +18,11 @@ jobs:
           python-version: '3.8'
       - name: Install dependencies
         run: |
-          pipenv run black . --check
           python -m pip install pipenv
           pipenv install --dev
       - name: Style check
         run: |
+          pipenv run black . --check
           pipenv run flake8 --max-line-length=88 .
       - name: Security Check
         run: |
