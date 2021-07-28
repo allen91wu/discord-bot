@@ -3,7 +3,7 @@ from discord.ext import commands
 from core.classes import Cog_Extension
 import json
 
-with open('setting.json', 'r', encoding='utf8') as jfile:
+with open("setting.json", "r", encoding="utf8") as jfile:
     jdata = json.load(jfile)
 
 
@@ -15,7 +15,7 @@ class React(Cog_Extension):
 
     @commands.command()
     async def clean(self, ctx, num: int):
-        await ctx.channel.purge(limit=num+1)
+        await ctx.channel.purge(limit=num + 1)
 
 
 def setup(bot):
