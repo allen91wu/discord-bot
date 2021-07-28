@@ -1,5 +1,9 @@
 # Discord-bot
 
+## Prerequisite
+- [Python3](https://www.python.org/downloads/)
+- [discord.py](https://github.com/Rapptz/discord.py)
+
 ## Function
 - Meme pictures sender
 - Chat bot
@@ -15,12 +19,13 @@ $ git clone https://github.com/allen91wu/discord-bot
 $ cd discord-bot
 ```
 
-Step 2. Set up your virtual environment with pipenv
+Step 2. Set up the virtual environment
 
 ```
 $ pip install pipenv
 $ pipenv install
 ```
+- [pipenv](https://github.com/pypa/pipenv): for dependency management
 
 Step 3. Set up your discord bot token
 
@@ -40,22 +45,31 @@ $ git clone https://github.com/allen91wu/discord-bot
 $ cd discord-bot
 ```
 
-Step 2. Set up your virtual environment with pipenv
+Step 2. Set up the virtual environment
 ```
 $ pip install pipenv
 $ pipenv install --dev
 ```
 
-Step 3. Reformat the coding style via [black](https://github.com/psf/black)
+Step 3. Set up your discord bot token
+```
+$ pipenv run dotenv set BOT_TOKEN YOUR_TOKEN
+```
+
+Step 4. Work on your new feature and make sure it can work
+
+Step 5. Reformat the coding style
 ```
 pipenv run black . 
 ```
 
-Step 4. Check the coding style again via [black](https://github.com/psf/black) and [flake8](https://github.com/PyCQA/flake8)
+Step 6. Check the coding style again
 ```
 pipenv run black . --check
 pipenv run flake8 --max-line-length=88 .
 ```
+- [black](https://github.com/psf/black)
+- [flake8](https://github.com/PyCQA/flake8)
 
 ## Authors
 [Allen Wu](https://github.com/allen91wu)
