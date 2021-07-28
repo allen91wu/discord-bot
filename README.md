@@ -66,7 +66,7 @@ pipenv run black .
 Step 6. Check the coding style again
 ```
 pipenv run black . --check
-pipenv run flake8 --max-line-length=88 .
+pipenv run flake8 .
 ```
 - [black](https://github.com/psf/black)
 - [flake8](https://github.com/PyCQA/flake8)
