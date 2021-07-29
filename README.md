@@ -67,14 +67,19 @@ Step 4. Work on your new feature and make sure it can work
 
 Step 5. Reformat the coding style
 ```
-pipenv run black . 
+$ pipenv run black . 
 ```
 
 Step 6. Check the coding style again
 ```
-pipenv run black . --check
-pipenv run flake8 .
+$ pipenv run black . --check
+$ pipenv run flake8 .
 ```
+Step 7. Run security check
+```
+$ pipenv check
+```
+
 - [black](https://github.com/psf/black)
 - [flake8](https://github.com/PyCQA/flake8)
 
