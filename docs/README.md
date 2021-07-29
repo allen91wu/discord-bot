@@ -21,7 +21,7 @@ It'a discord bot.
 - Remove messages
 - Echo messages
 
-## Usage (Windows & Linux)
+## Usage
 Step 1. Download the repo
 ```sh
 $ git clone https://github.com/allen91wu/discord-bot

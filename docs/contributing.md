@@ -25,6 +25,7 @@ git checkout -b [YOUR FEATURE]
 ```sh
 python3 -m pip install pipx
 python3 -m pipx install invoke
+python3 -m pipx install pipenv
 python3 -m pipx ensurepath
 ```
 
