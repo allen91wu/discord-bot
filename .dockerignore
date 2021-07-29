@@ -1,28 +1,42 @@
-# Created by https://www.gitignore.io/api/python
+# Git
+.git
+.gitignore
 
-### Python ###
+# CI
+.codeclimate.yml
+.travis.yml
+.taskcluster.yml
+
+# Docker
+docker-compose.yml
+.docker
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*/*/*/__pycache__/
 *.py[cod]
-*$py.class
+*/*.py[cod]
+*/*/*.py[cod]
+*/*/*/*.py[cod]
 
 # C extensions
 *.so
 
 # Distribution / packaging
 .Python
+env/
 build/
 develop-eggs/
 dist/
 downloads/
 eggs/
-.eggs/
 lib/
 lib64/
 parts/
 sdist/
 var/
-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -41,24 +55,16 @@ pip-delete-this-directory.txt
 htmlcov/
 .tox/
 .coverage
-.coverage.*
 .cache
-.pytest_cache/
 nosetests.xml
 coverage.xml
-*.cover
-.hypothesis/
 
 # Translations
 *.mo
 *.pot
 
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
+# Django stuff:
+*.log
 
 # Sphinx documentation
 docs/_build/
@@ -66,39 +72,24 @@ docs/_build/
 # PyBuilder
 target/
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# celery beat schedule file
-celerybeat-schedule.*
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
+# Virtual environment
+.env/
+.venv/
 venv/
-ENV/
-env.bak/
-venv.bak/
 
-# Spyder project settings
-.spyderproject
-.spyproject
+# PyCharm
+.idea
 
-# Rope project settings
+# Python mode for VIM
 .ropeproject
+*/.ropeproject
+*/*/.ropeproject
+*/*/*/.ropeproject
 
-# mkdocs documentation
-/site
+# Vim swap files
+*.swp
+*/*.swp
+*/*/*.swp
+*/*/*/*.swp
 
-# mypy
-.mypy_cache/
-
-
-# End of https://www.gitignore.io/api/python
+# End of https://github.com/themattrix/python-pypi-template/blob/master/.dockerignore

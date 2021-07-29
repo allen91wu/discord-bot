@@ -1,0 +1,9 @@
+site_name: discord-bot
+nav:
+  - Home: README.md
+  - Contributing: contributing.md
+theme:
+  name: 'material'
+repo_url: https://github.com/allen91wu/discord-bot
+remote_branch: gh-pages
+remote_name: origin

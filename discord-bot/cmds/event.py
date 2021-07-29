@@ -2,9 +2,8 @@ import json
 import random
 
 import discord  # noqa: F401
-from discord.ext import commands
-
 from core.classes import Cog_Extension
+from discord.ext import commands
 
 with open("setting.json", "r", encoding="utf8") as jfile:
     jdata = json.load(jfile)

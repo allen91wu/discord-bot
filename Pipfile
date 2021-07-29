@@ -1,18 +1,35 @@
 [[source]]
-url = "https://pypi.python.org/simple"
-verify_ssl = true
 name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+invoke = "*"
+pytest = ">=6.0.1"
+pytest-cov = "*"
+pytest-mock = "*"
+pytest-xdist = "*"
+hypothesis = "*"
+black = "*"
+isort = ">=5.0.0"
+flake8 = "*"
+mypy = "*"
+pylint = ">=2.7.0"
+bandit = "*"
+commitizen = "*"
+pre-commit = "*"
+mkdocs = "*"
+mkdocs-material = ">=7.0.6"
 
 [packages]
 "discord.py" = "*"
 
-[dev-packages]
-flake8 = "*"
-black = "*"
-isort = "*"
+[pipenv]
+allow_prereleases = true
 
 [requires]
 python_version = "3.8"
 
-[packages.python-dotenv]
-extras = [ "cli",]
+[dev-packages.coverage]
+extras = [ "toml",]
+version = "*"
