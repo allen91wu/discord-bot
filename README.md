@@ -67,21 +67,25 @@ Step 4. Work on your new feature and make sure it can work
 
 Step 5. Reformat the coding style
 ```
-$ pipenv run black . 
+$ pipenv run black .
+$ pipenv run isort .
 ```
 
 Step 6. Check the coding style again
 ```
 $ pipenv run black . --check
 $ pipenv run flake8 .
+$ pipenv run isort --check-only .
 ```
+- [black](https://github.com/psf/black)
+- [flake8](https://github.com/PyCQA/flake8)
+- [isort](https://github.com/PyCQA/isort)
+
 Step 7. Run security check
+
 ```
 $ pipenv check
 ```
-
-- [black](https://github.com/psf/black)
-- [flake8](https://github.com/PyCQA/flake8)
 
 ## Authors
 [Allen Wu](https://github.com/allen91wu)

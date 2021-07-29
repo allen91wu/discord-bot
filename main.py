@@ -1,8 +1,9 @@
 # Python 3.8
-import discord  # noqa: F401
-from discord.ext import commands
 import json
 import os
+
+import discord  # noqa: F401
+from discord.ext import commands
 from dotenv import load_dotenv
 
 load_dotenv()
