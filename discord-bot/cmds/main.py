@@ -9,8 +9,6 @@ class Main(Cog_Extension):
         await ctx.send(f"{round(self.bot.latency*1000)}(ms)")
         print("sned a message")
 
-    # test send ping float
-
 
 def setup(bot):
     bot.add_cog(Main(bot))
