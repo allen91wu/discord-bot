@@ -1,6 +1,7 @@
 # Python 3.8
-from discord.ext import commands
 import os
+
+from discord.ext import commands
 
 bot = commands.Bot(command_prefix="[")
 
