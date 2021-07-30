@@ -19,7 +19,7 @@ It'a discord bot.
 Step 1. Download the repo
 ```sh
 $ git clone https://github.com/allen91wu/discord-bot
-$ cd ./discord-bot/discord-bot/
+$ cd discord-bot
 ```
 
 Step 2. Set up the virtual environment
@@ -41,6 +41,7 @@ $ pipenv run dotenv set BOT_TOKEN YOUR_TOKEN
 
 Step 4. Implement the bot server
 ```sh
+$ cd discord-bot
 $ pipenv run python discord-bot.py
 ```
 
