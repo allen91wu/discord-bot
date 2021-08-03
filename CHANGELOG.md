@@ -1,4 +1,10 @@
 # Changelog
+## 0.3.0 (2021-08-03)
+
+### Feat
+
+- **kktix.py**: add search kktix information
+
 ## 0.2.0 (2021-08-03)
 
 ### Feat
