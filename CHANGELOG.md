@@ -1,4 +1,10 @@
 # Changelog
+## 0.2.0 (2021-08-03)
+
+### Feat
+
+- **kktix**: add kktix crawler
+
 ## 0.1.0 (2021-07-29)
 
 ### Feat
