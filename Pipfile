@@ -23,6 +23,9 @@ mkdocs-material = ">=7.0.6"
 
 [packages]
 "discord.py" = "*"
+requests = "*"
+beautifulsoup4 = "*"
+types-requests = "*"
 
 [pipenv]
 allow_prereleases = true
